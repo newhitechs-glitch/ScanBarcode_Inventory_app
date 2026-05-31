@@ -39,12 +39,12 @@
   .top{display:flex;align-items:center;gap:10px;margin-bottom:14px}
   .top .logo{width:40px;height:40px;border-radius:12px;background:var(--red);display:grid;place-items:center;
     box-shadow:0 6px 20px rgba(192,23,43,0.5)}
-  .top .logo svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2.2}
+  .top .logo svg{width:22px;height:22px;fill:#fff}
   .top h1{font-size:18px;font-weight:600;line-height:1.15}
   .top p{font-size:11.5px;color:var(--twm)}
   .gear{margin-left:auto;width:38px;height:38px;border-radius:11px;border:1px solid var(--glass-bd);
     background:var(--glass-in);color:var(--tws);display:grid;place-items:center;cursor:pointer}
-  .gear svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2}
+  .gear svg{width:18px;height:18px;fill:currentColor}
 
   /* Card */
   .card{background:var(--glass-md);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
@@ -86,7 +86,7 @@
     font-family:inherit;font-size:14px;font-weight:500;padding:12px 14px;border-radius:12px;cursor:pointer;
     border:1px solid var(--glass-bd);background:var(--glass-in);color:var(--tw);transition:all .15s}
   .btn:hover{background:rgba(255,255,255,0.16)}
-  .btn svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:2}
+  .btn svg{width:17px;height:17px;fill:currentColor}
   .btn.primary{background:var(--red);border-color:rgba(255,255,255,0.12);box-shadow:0 6px 18px rgba(192,23,43,0.45)}
   .btn.primary:hover{background:var(--red-light)}
   .btn.green{background:var(--green);box-shadow:0 6px 18px rgba(26,168,102,0.45)}
@@ -181,14 +181,14 @@
   <!-- Header -->
   <div class="top">
     <div class="logo">
-      <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4v10l-9 4-9-4V7z"/><path d="M3 7l9 4 9-4"/><path d="M12 11v10"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2l8 4-8 4-8-4zM4 8l7 3.5V21l-7-3.5zM20 8l-7 3.5V21l7-3.5z"/></svg>
     </div>
     <div>
       <h1>สแกนรหัสสินค้า</h1>
       <p id="apiState">เชื่อมต่อระบบสต็อกอะไหล่</p>
     </div>
     <button class="gear" id="gearBtn" title="ตั้งค่า">
-      <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M19.4 13a7.8 7.8 0 000-2l2-1.6-2-3.4-2.4 1a7.5 7.5 0 00-1.7-1l-.4-2.6h-4l-.4 2.6a7.5 7.5 0 00-1.7 1l-2.4-1-2 3.4L4.6 11a7.8 7.8 0 000 2l-2 1.6 2 3.4 2.4-1a7.5 7.5 0 001.7 1l.4 2.6h4l.4-2.6a7.5 7.5 0 001.7-1l2.4 1 2-3.4zM12 15.5A3.5 3.5 0 1115.5 12 3.5 3.5 0 0112 15.5z"/></svg>
     </button>
   </div>
 
@@ -212,11 +212,11 @@
 
     <div class="row">
       <button class="btn primary" id="camBtn">
-        <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M2 6a2 2 0 012-2h10a2 2 0 012 2v2.5l5-3.5v13l-5-3.5V18a2 2 0 01-2 2H4a2 2 0 01-2-2z"/></svg>
         <span id="camBtnLabel">เปิดกล้อง</span>
       </button>
       <label class="btn" style="cursor:pointer">
-        <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><path d="M17 8l-5-5-5 5M12 3v12"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l5 5h-3v6h-4V7H7zM4 18h16v2H4z"/></svg>
         <span>อัพโหลดรูป</span>
         <input type="file" id="fileInput" accept="image/*" style="display:none" />
       </label>
@@ -265,7 +265,7 @@
     <div class="row">
       <button class="btn" id="cancelBtn">ยกเลิก</button>
       <button class="btn primary" id="saveBtn">
-        <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/><path d="M17 21v-8H7v8M7 3v5h7"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M5 3h11l5 5v11a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2zm2 2v5h8V5zm5 7a3 3 0 100 6 3 3 0 000-6z"/></svg>
         <span id="saveLabel">บันทึก</span>
       </button>
     </div>
